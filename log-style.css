@@ -1,0 +1,133 @@
+html,
+body {
+  height: 100%;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #d6840a;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: rgb(237, 153, 85);
+}
+
+.bg-login {
+  margin: auto;
+  padding: 35px;
+  border-radius: 5px;
+  background: linear-gradient(15deg, #dadada, #fff);
+  -webkit-box-shadow: 0px 0px 90px -26px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 90px -26px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 90px -26px rgba(0, 0, 0, 0.75);
+}
+
+.icon {
+  width: 90px;
+  margin: auto;
+  border: 3px solid #e0e0e0;
+  border-radius: 50%;
+}
+
+.fa-user-alt-slash {
+  font-size: 35px;
+  padding: 23px 0px;
+  width: 80px;
+  border-radius: 50%;
+  margin: auto;
+  display: block;
+  color: #bdbdbd;
+  background-color: #e0e0e0;
+}
+
+.form-signin {
+  width: 100%;
+
+  max-width: 390px;
+
+  padding: 15px;
+
+  margin: 0 auto;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-control {
+  position: relative;
+
+  box-sizing: border-box;
+
+  height: auto;
+
+  padding: 10px 20px;
+
+  font-size: 15px;
+}
+
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+
+  border-bottom-right-radius: 0;
+
+  border-bottom-left-radius: 0;
+
+  color: #868e96;
+
+  background: linear-gradient(15deg, #f7f5f5, #fff);
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+
+  border-top-left-radius: 0;
+
+  border-top-right-radius: 0;
+
+  color: #868e96;
+
+  background: linear-gradient(15deg, #f7f5f5, #fff);
+}
+
+/* Outline None */
+
+.form-control:hover,
+.form-control:focus,
+.form-control:active,
+.form-control:active:focus,
+.form-control .form-control:not(:disabled):not(.disabled):active,
+.form-control .form-control:not(:disabled):not(.disabled):active:focus {
+  outline: none !important;
+
+  box-shadow: none !important;
+
+  border: 1px solid #dee2e6;
+}
+
+/* Button */
+
+.btn {
+  font-size: 15px !important;
+
+  padding: 11px 0px;
+
+  border-radius: 10em;
+
+  letter-spacing: 0.5px;
+}
