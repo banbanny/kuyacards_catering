@@ -52,7 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             try {
                 $result = $stmtinsert->execute([$email, $hashed_password]);
                 if ($result) {
-                    header("Location: login_signup.php?signup=success"); // Redirect to login form
+                    header("Location: home.php?signup=success"); // Redirect to login form
                     exit();
                 } else {
                     echo '<div class="alert alert-danger">Signup failed. Please try again.</div>';
@@ -111,7 +111,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <?php } ?>
 
                     <!-- Login Form -->
-                    <form id="loginForm" class="form-container active" action="login_signup.php" method="POST">
+                    <form id="loginForm" class="form-container active" action="home.php" method="POST">
                         <h4>Login</h4>
                         <div class="mb-3">
                             <label for="login-email" class="form-label">Email</label>
@@ -129,7 +129,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     </form>
 
                     <!-- Sign Up Form -->
-                    <form id="signupForm" class="form-container" action="login_signup.php" method="POST">
+                    <form id="signupForm" class="form-container" action="home.php" method="POST">
                         <h4>Sign Up</h4>
                         <div class="mb-3">
                             <label for="signup-email" class="form-label">Email</label>

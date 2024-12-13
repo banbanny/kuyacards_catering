@@ -1,0 +1,408 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #7fb3d5;
+  min-height: 100vh; /* Ensure the body is at least the height of the viewport */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  padding-top: 100px; /* Adjust this to prevent content from being hidden behind the fixed header */
+}
+
+html, body {
+  height: 100%; /* Make sure both html and body take up full height */
+}
+
+.container {
+  max-width: 100vw;
+  margin: 0 auto;
+}
+
+#header {
+  background: white;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  width: 100%; /* Ensure the header spans the entire width */
+}
+
+#header-img {
+  margin-left: 20px;
+  float: left;
+  height: 80px;
+}
+
+nav ul {
+  overflow: hidden;
+  clear: both;
+  margin: 0;
+  padding: 0;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  display: block;
+  font-size: 1.15;
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+
+/* menu icon */
+
+.menu {
+  margin-left: 15px;
+}
+
+#header .menu-icon {
+  cursor: pointer;
+  padding: 28px 20px;
+  user-select: none;
+  float: right;
+}
+
+#header .menu-icon .nav-icon {
+  background: #333;
+  display: block;
+  height: 3px;
+  position: relative;
+  top: 10px;
+  transition: background 0.2s ease-out;
+  width: 30px;
+}
+
+#header .menu-icon .nav-icon:before,
+#header .menu-icon .nav-icon:after {
+  background: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+#header .menu-icon .nav-icon:before {
+  top: 6px;
+}
+
+#header .menu-icon .nav-icon:after {
+  top: -6px;
+}
+
+/* menu btn */
+
+#header .menu-btn {
+  display: none;
+}
+
+#header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+#header .menu-btn:checked ~ .menu-icon .nav-icon {
+  background: transparent;
+}
+
+#header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+#header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+main {
+  display: flex;
+  flex-flow: column-reverse;
+  color: white;
+  width: 100%;
+  margin: 0;
+  padding-top: 100px;
+
+}
+
+.hero {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.hero-title-primary {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 10vmin;
+  line-height: 58px;
+}
+
+.hero-title-sub {
+  margin: 0.2em 0 1em 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 4.6vmin;
+}
+
+button {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-family: "Poppins", sans-serif;
+  background-color: #fff;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+figure {
+  text-align: center;
+}
+
+figure svg {
+  margin: 3em auto 0;
+  width: 80vw;
+}
+
+.waves {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -7px; /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 150px;
+}
+
+.video-content {
+  padding-top: 80px;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
+  flex-wrap: wrap;
+  color: red;
+  background-color: white;
+}
+
+.video-title {
+  font-size: 35px;
+}
+
+.video-subtitle {
+  margin-top: -10px;
+  color: #912375;
+  margin-bottom: 20px;
+}
+
+iframe {
+  height: 50vw;
+  width: 91vw;
+}
+
+.three-dots {
+  text-align: center;
+}
+
+.three-dots span {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: red;
+  display: inline-block;
+  margin: 30px 5px;
+}
+
+.content {
+  padding: 10px 38px 10px 38px;
+  background: white;
+}
+
+.inner-content {
+  padding-top: 50px;
+}
+
+.inner-content-text {
+  padding-right: 0.78125rem;
+  padding-left: 0.78125rem;
+  padding-bottom: 40px;
+}
+
+.inter-content-subtitle {
+  position: relative;
+  display: inline-block;
+  padding-left: 40px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.10938rem;
+  color: #828282;
+}
+
+.inter-content-subtitle::before {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  display: block;
+  width: 25px;
+  height: 5px;
+  content: "";
+  background-color: red;
+  opacity: 0.7;
+}
+
+.inner-content-title {
+  margin-top: 25px;
+  margin-right: 60px;
+  font-size: 2.125rem;
+  font-weight: 700;
+  color: red;
+}
+
+.inner-content-para {
+  margin-top: 25px;
+  margin-right: 60px;
+  font-size: 1rem;
+  line-height: 1.875rem;
+  letter-spacing: 0.04375rem;
+  font-style: normal;
+  font-weight: 400;
+  color: #4c4c4c;
+}
+
+.inner-image-container {
+  position: relative;
+  padding-right: 0.78125rem;
+  padding-left: 0.78125rem;
+  flex: 0 0 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.inner-content-image {
+  position: relative;
+  height: 350px;
+}
+
+.section-images {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pricing-container {
+  padding: 150px 38px 10px 38px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing-title {
+  margin-bottom: 50px;
+  font-size: 23px;
+  color: black;
+  align-self: center;
+}
+
+.pricing-title > h2 {
+  font-weight: 600;
+}
+
+.flex-container {
+  max-width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  padding: 1em;
+}
+
+.flex-item {
+  flex: 1;
+  width: 250px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+
+.flex-item:not(:last-child) {
+  margin-right: 2em;
+}
+
+.package {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  transition: 0.25s;
+  display: flex;
+  flex-direction: column;
+}
+
+.package:hover {
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+  transform: scale(1.025);
+}
+
+.package .header {
+  color: black;
+  border-bottom: 5px red solid;
+  font-size: 1.6em;
+  font-weight: bold;
+  padding: 1.3em;
+}
+
+.package .content {
+  padding: 1.3em;
+}
+
+.package .content p {
+  font-size: 1.1em;
+}
+
+.price {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+package-btn {
+  background-color: #912375;
+  color: white;
+  padding: 0.7em;
+  font-size: 1.1em;
+}
+
+footer {
+  margin-top: 10vh;
+}
+
+footer .footer-text {
+  padding: 3em 0;
+  text-align: center;
+}
+
+footer .footer-text p {
+  font-size: 1.25em;
+  font-weight: 500;
+}
+.btn-order:hover {
+  background-color: #e14e4f;
+}

@@ -67,7 +67,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <div class="card">
                 <div class="card-body">
                     <h3 class="text-center">Login or Sign Up</h3>
-                    <form action="login_signup.php" method="POST">
+                    <form action="home.php" method="POST">
                         <!-- Login Form -->
                         <div class="login-form">
                             <h4>Login</h4>
@@ -86,7 +86,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
                     <hr />
 
-                    <form action="login_signup.php" method="POST">
+                    <form action="home.php" method="POST">
                         <!-- Sign Up Form -->
                         <div class="signup-form">
                             <h4>Sign Up</h4>
@@ -103,7 +103,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     </form>
 
                     <div class="mt-3">
-                        <p class="text-center">Already have an account? <a href="login_signup.php">Login here</a></p>
+                        <p class="text-center">Already have an account? <a href="home.php">Login here</a></p>
                     </div>
                 </div>
             </div>

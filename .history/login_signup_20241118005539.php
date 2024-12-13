@@ -77,7 +77,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <h3 class="text-center">Login or Sign Up</h3>
 
                     <!-- Login Form -->
-                    <form id="loginForm" class="form-container active" action="login_signup.php" method="POST">
+                    <form id="loginForm" class="form-container active" action="home.php" method="POST">
                         <h4>Login</h4>
                         <div class="mb-3">
                             <label for="username" class="form-label">Username</label>
@@ -95,7 +95,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     </form>
 
                     <!-- Sign Up Form -->
-                    <form id="signupForm" class="form-container" action="login_signup.php" method="POST">
+                    <form id="signupForm" class="form-container" action="home.php" method="POST">
                         <h4>Sign Up</h4>
                         <div class="mb-3">
                             <label for="new_username" class="form-label">Username</label>

@@ -1,0 +1,90 @@
+/* General Styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  min-height: 100vh;
+}
+
+h4 {
+  margin-top: 30px;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  width: 250px;
+  background-color: #333;
+  color: white;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px 10px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo-box {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar-nav .nav-link {
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.sidebar-nav .nav-link:hover {
+  background-color: #444;
+}
+
+.sidebar-nav .nav-link.active {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+.sidebar-nav .nav-link.text-danger:hover {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Content Section */
+.content-section {
+  margin-left: 250px;
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.hero-title-primary {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 20px;
+}
+
+.hero-title-sub {
+  text-align: center;
+  font-size: 1.5rem;
+  color: gray;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .content-section {
+    margin-left: 0;
+  }
+}

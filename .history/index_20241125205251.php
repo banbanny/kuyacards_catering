@@ -58,7 +58,7 @@ if (isset($_SESSION['user_id'])) {
             <li><a href="logout.php" class="nav-link">LOG OUT</a></li>
         <?php else: ?>
             <!-- Show LOG IN button if user is not logged in -->
-            <li><a href="login_signup.php" class="nav-link">LOG IN</a></li>
+            <li><a href="home.php" class="nav-link">LOG IN</a></li>
         <?php endif; ?>
     </ul>
 </nav>
@@ -72,7 +72,7 @@ if (isset($_SESSION['user_id'])) {
         <h1 class="hero-title-primary">Kuya Card's </h1>
         <p class="hero-title-sub">Home of Delicacies</p>
     
-        <button onclick="window.location.href='login_signup.php';">Order Now</button>
+        <button onclick="window.location.href='home.php';">Order Now</button>
       </section>
     
     </main>

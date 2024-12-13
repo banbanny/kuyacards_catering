@@ -4,7 +4,7 @@ require_once('php/catering_db.php');
 
 // Check if the user is already logged in
 if (isset($_SESSION['user_id'])) {
-    header("Location: login_signup.php"); // Redirect to home if already logged in
+    header("Location: home.php"); // Redirect to home if already logged in
     exit();
 }
 
@@ -121,7 +121,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <?php } ?>
 
                     <!-- Login Form -->
-                    <form id="loginForm" class="form-container active" action="login_signup.php" method="POST">
+                    <form id="loginForm" class="form-container active" action="home.php" method="POST">
                         <h4>Login</h4>
                         <div class="mb-3">
                             <label for="login-email" class="form-label">Email</label>

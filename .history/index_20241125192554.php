@@ -7,7 +7,7 @@ $is_logged_in = isset($_SESSION['user_id']);
 
 // If the user is not logged in, redirect to login page
 if (!$is_logged_in) {
-    header('Location: login_signup.php');
+    header('Location: home.php');
     exit();
 }
 ?>

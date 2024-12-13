@@ -57,7 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 $result = $stmt->execute([$email, $password]);
 
                 if ($result) {
-                    header("Location: login_signup.php?signup=success"); // Redirect after successful signup
+                    header("Location: home.php?signup=success"); // Redirect after successful signup
                     exit();
                 } else {
                     $signup_error = "Signup failed. Please try again.";
@@ -115,7 +115,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <?php } ?>
 
                     <!-- Login Form -->
-                    <form id="loginForm" class="form-container active" action="login_signup.php" method="POST">
+                    <form id="loginForm" class="form-container active" action="home.php" method="POST">
                         <h4>Login</h4>
                         <div class="mb-3">
                             <label for="login-email" class="form-label">Email</label>

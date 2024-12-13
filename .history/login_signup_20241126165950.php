@@ -59,7 +59,7 @@ if (isset($_SESSION['user_id'])) {
         <section class="hero container">
             <h1 class="hero-title-primary">Kuya Card's </h1>
             <p class="hero-title-sub">Home of Delicacies</p>
-            <button onclick="window.location.href='login_signup.php';">Order Now</button>
+            <button onclick="window.location.href='home.php';">Order Now</button>
         </section>
     </main>
 

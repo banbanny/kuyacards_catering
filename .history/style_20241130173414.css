@@ -1,0 +1,66 @@
+/* General Styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4; /* Light background for container contrast */
+  display: flex;
+  justify-content: center; /* Centers the container */
+  align-items: flex-start; /* Aligns the container at the top */
+  min-height: 100vh;
+}
+
+/* Sidebar Container Styling */
+.sidebar-container {
+  margin-top: 20px;
+  width: 280px; /* Container width */
+  background-color: #1c2938; /* Matches sidebar background */
+  border-radius: 8px; /* Rounded edges for container */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  overflow: hidden; /* Ensures inner content doesn't overflow */
+}
+
+/* Sidebar Styling */
+.sidebar {
+  color: white;
+  padding: 20px 15px;
+}
+
+.profile-section {
+  margin-bottom: 20px;
+}
+
+.profile-image img {
+  width: 80px;
+  height: 80px;
+  border: 2px solid white;
+  padding: 3px;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar-nav .nav-link {
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.sidebar-nav .nav-link:hover {
+  background-color: #445d77;
+}
+
+.sidebar-nav .nav-link.active {
+  background-color: #dc3545;
+  color: white;
+  font-weight: bold;
+}
+
+.sidebar-nav .nav-link.text-danger:hover {
+  background-color: #b02a37;
+  color: white;
+}

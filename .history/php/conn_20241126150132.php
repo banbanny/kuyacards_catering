@@ -25,7 +25,7 @@
             }
         }else {
             //direct to login
-            header("Location: login_signup.php");
+            header("Location: home.php");
             die;
         }
     }

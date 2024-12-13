@@ -35,7 +35,7 @@ session_start();
           <li><a href="#about" class="nav-link">ABOUT US</a></li>
           <li><a href="#features" class="nav-link">CONTACT US</a></li>
           <li><a href="#pricing" class="nav-link">ORDER</a></li>
-          <li><a href="login_signup.php" class="nav-link">LOG IN</a></li>
+          <li><a href="home.php" class="nav-link">LOG IN</a></li>
 
           <li>
             <a href="cart.php" class="nav-link">

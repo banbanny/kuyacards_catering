@@ -50,7 +50,7 @@ if (isset($_SESSION['user_id'])) {
                 <?php if (isset($_SESSION['user_id'])): ?>
                     <li><a href="logout.php" class="nav-link">LOG OUT</a></li>
                 <?php else: ?>
-                    <li><a href="login_signup.php" class="nav-link">LOG IN</a></li>
+                    <li><a href="home.php" class="nav-link">LOG IN</a></li>
                 <?php endif; ?>
             </ul>
         </nav>

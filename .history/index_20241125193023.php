@@ -55,7 +55,7 @@ $is_logged_in = isset($_SESSION['user_id']);
             <li><a href="logout.php" class="nav-link">LOG OUT</a></li>
           <?php else: ?>
             <!-- Show login for non-logged-in users -->
-            <li><a href="login_signup.php" class="nav-link">LOG IN</a></li>
+            <li><a href="home.php" class="nav-link">LOG IN</a></li>
           <?php endif; ?>
         </ul>
       </nav>
@@ -68,7 +68,7 @@ $is_logged_in = isset($_SESSION['user_id']);
         <section class="hero container">
           <h1 class="hero-title-primary">Kuya Card's</h1>
           <p class="hero-title-sub">Home of Delicacies</p>
-          <button onclick="window.location.href='login_signup.php';">Order Now</button>
+          <button onclick="window.location.href='home.php';">Order Now</button>
         </section>
       <?php else: ?>
         <!-- If logged in, show main content like order packages -->

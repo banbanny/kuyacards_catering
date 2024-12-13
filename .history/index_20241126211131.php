@@ -111,7 +111,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <?php } ?>
 
                     <!-- Login Form -->
-                    <form id="loginForm" class="form-container active" action="login_signup.php" method="POST">
+                    <form id="loginForm" class="form-container active" action="home.php" method="POST">
                         <h4>Login</h4>
                         <div class="mb-3">
                             <label for="login-email" class="form-label">Email</label>

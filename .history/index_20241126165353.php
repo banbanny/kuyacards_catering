@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     // Successful login, set session variables
                     $_SESSION['user_id'] = $user['id'];
                     $_SESSION['email'] = $user['email'];
-                    header("Location: login_signup.php"); // Redirect to homepage
+                    header("Location: home.php"); // Redirect to homepage
                     exit();
                 } else {
                     $login_error = "Invalid Email or Password!";
@@ -58,7 +58,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 $result = $stmt->execute([$email, $hashedPassword]);
 
                 if ($result) {
-                    header("Location: login_signup.php?signup=success"); // Redirect after successful signup
+                    header("Location: home.php?signup=success"); // Redirect after successful signup
                     exit();
                 } else {
                     $signup_error = "Signup failed. Please try again.";
@@ -117,7 +117,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <?php } ?>
 
                     <!-- Login Form -->
-                    <form id="loginForm" class="form-container active" action="login_signup.php" method="POST">
+                    <form id="loginForm" class="form-container active" action="home.php" method="POST">
                         <h4>Login</h4>
                         <div class="mb-3">
                             <label for="login-email" class="form-label">Email</label>

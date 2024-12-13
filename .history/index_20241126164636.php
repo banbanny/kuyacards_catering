@@ -4,7 +4,7 @@ require_once('php/catering_db.php');
 
 // Check if the user is already logged in
 if (isset($_SESSION['user_id'])) {
-    header("Location: login_signup.php"); // Redirect to home if already logged in
+    header("Location: home.php"); // Redirect to home if already logged in
     exit();
 }
 

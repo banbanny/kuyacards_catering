@@ -50,7 +50,7 @@ $is_logged_in = isset($_SESSION['user_id']);
           </li>
           
           <?php if (!$is_logged_in): ?>
-            <li><a href="login_signup.php" class="nav-link">LOG IN</a></li>
+            <li><a href="home.php" class="nav-link">LOG IN</a></li>
           <?php else: ?>
             <li><a href="logout.php" class="nav-link">LOG OUT</a></li>
           <?php endif; ?>
@@ -69,7 +69,7 @@ $is_logged_in = isset($_SESSION['user_id']);
         <?php if ($is_logged_in): ?>
           <button onclick="window.location.href='order_page.php';">Order Now</button>
         <?php else: ?>
-          <button onclick="window.location.href='login_signup.php';">Please Log In to Order</button>
+          <button onclick="window.location.href='home.php';">Please Log In to Order</button>
         <?php endif; ?>
       </section>
     </main>

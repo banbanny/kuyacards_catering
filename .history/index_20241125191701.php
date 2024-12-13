@@ -46,7 +46,7 @@
               <span id="cart-count">0</span> <!-- Cart count span -->
             </a>
           </li>
-          <li><a href="login_signup.php" class="nav-link">LOG IN</a></li>
+          <li><a href="home.php" class="nav-link">LOG IN</a></li>
           <li><a href="logout.php" class="nav-link">LOG OUT</a></li>
         
         </ul>
@@ -60,7 +60,7 @@
         <h1 class="hero-title-primary">Kuya Card's </h1>
         <p class="hero-title-sub">Home of Delicacies</p>
     
-        <button onclick="window.location.href='login_signup.php';">Order Now</button>
+        <button onclick="window.location.href='home.php';">Order Now</button>
       </section>
     
     </main>
